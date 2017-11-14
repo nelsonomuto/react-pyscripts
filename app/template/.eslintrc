@@ -1,0 +1,54 @@
+extends:
+#  - eslint-config-airbnb
+#  - eslint:recommended
+  - prettier
+  - prettier/react
+
+plugins:
+    - prettier
+#    - flowtype
+
+parser:
+  babel-eslint
+
+settings:
+  ecmascript: 6
+
+parserOptions:
+  sourceType: "module"
+  ecmaVersion: 6
+  ecmaFeatures:
+    jsx: true
+
+env:
+  browser: true
+  jest: true
+  jquery: true
+  es6: true
+  commonjs: true
+
+rules:
+  indent: 2
+  func-style: 0
+  func-names: 0
+  comma-dangle: 0
+  no-console: 0
+  no-param-reassign: 0
+  quotes: ["error", "single"]
+  linebreak-style: 0
+  object-shorthand: 0
+  no-underscore-dangle: 0
+  import/no-extraneous-dependencies: 0
+  import/no-unresolved: 0
+  import/extensions: 0
+  react/jsx-filename-extension: 0
+  react/prefer-stateless-function: 0
+  react/no-children-prop: 0
+  react/forbid-prop-types: 0
+  react/prop-types: 0
+  prettier/prettier: ["error", {
+    "singleQuote": true,
+    "tabWidth": 4,
+    "jsxBracketSameLine": false,
+    "printWidth": 100
+  }]

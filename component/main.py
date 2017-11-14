@@ -4,10 +4,11 @@ from directory import add_directory
 from templates import tpls
 
 component_name = sys.argv[1]
+component_dir_name = sys.argv[2] if(len(sys.argv) > 2) else 'component'
 script_path = path.dirname(path.realpath(sys.argv[0]))
 repo_path = path.dirname(path.dirname(script_path))
 app_path = path.join(repo_path, 'app')
-directory = path.join(app_path, component_name)
+directory = path.join(app_path, component_dir_name, component_name)
 test_directory = path.join(directory, '__tests__')
 
 def format(s): 
@@ -18,6 +19,7 @@ for k, v in tpls.items():
     print(f'format {v}')    
 
 print(f'\
+    component_dir_name {component_dir_name}\n \
     component_name {component_name}\n \
     script_path {script_path}\n \
     dir_path {app_path}\n \
