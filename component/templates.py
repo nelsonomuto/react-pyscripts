@@ -18,7 +18,9 @@ export default class {{component_name}} extends React.Component {{{{
     }}}}
     render() {{{{
         return (
-            <div class={{{{styles.container}}}}></div>
+            <div class={{{{styles.container}}}}>
+                <div />
+            </div>
         );
     }}}}
 }}}}
@@ -30,7 +32,7 @@ import renderer from 'react-test-renderer';
 import {{component_name}} from '../index.js';
 
 it('renders correctly', () => {{{{
-    const tree = renderer.create(<{{{{component_name}}}} />).toJSON();
+    const tree = renderer.create(<{{component_name}} />).toJSON();
     expect(tree).toMatchSnapshot();
 }}}});
 """)
