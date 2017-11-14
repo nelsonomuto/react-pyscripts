@@ -1,2 +1,2 @@
 # add Loading component
-python pyscripts/component/main.py Loading
+python component/main.py Loading
