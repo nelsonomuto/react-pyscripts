@@ -22,4 +22,4 @@ The devapp listens on port _3006_ by default but this is configurable. It will c
 
 ### webpack-react-multi-app
 
-The main driver behind the development app is a [custom webpack plugin](webpack-react-multi-app) and configuration setup that allows for an output of targeted individual _microapps_ corresponding to each component.
+The main driver behind the development app is a [custom webpack plugin](https://github.com/nelsonomuto/webpack-react-multi-app) and configuration setup that allows for an output of targeted individual _microapps_ corresponding to each component.
