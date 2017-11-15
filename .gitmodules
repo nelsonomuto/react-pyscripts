@@ -1,0 +1,3 @@
+[submodule "webpack-react-multi-app"]
+	path = webpack-react-multi-app
+	url = git@github.com:nelsonomuto/webpack-react-multi-app.git
