@@ -20,6 +20,6 @@ We use symlinks back to the _base app_ (the app which you are developing) that a
 
 The devapp listens on port _3006_ by default but this is configurable. It will contain a corresponding view for each component in the targeted component directories of the base app. So you can use the url to toggle between components in the browser. For example if your app contains a _component/Loading_ and _container/Notification_ component, you will be able to view each separately by visiting _http://localhost:3006/component/Loading_ and _http://localhost:3006/container/Notification_ respectively.
 
-### devapp webpack
+### webpack-react-multi-app
 
-The main driver behind the development app is it's custom webpack plugin and configuration setup that allows for an output of targeted individual _microapps_ corresponding to each component.
+The main driver behind the development app is a [custom webpack plugin](webpack-react-multi-app) and configuration setup that allows for an output of targeted individual _microapps_ corresponding to each component.
