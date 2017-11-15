@@ -1,0 +1,1 @@
+python react-pyscripts/src/devapp/main.py app/component dev_app 3106
