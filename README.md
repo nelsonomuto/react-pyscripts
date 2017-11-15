@@ -4,6 +4,8 @@ The goal of react-pyscripts is to provide foundational support for building reac
 
 It is especially useful for building a component library.
 
+`You need python3 installed on your computer`
+
 ## scoped development
 
 The philosophy behind this is that components should allow for easy development in a stateless manner & then later assembled in a container for their final use in an application, however the former is where the majority of our focus usually lies and so should be performed independently of the application, state and any other concerns that are domain specific.
