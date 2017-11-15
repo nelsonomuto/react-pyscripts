@@ -1,2 +1,2 @@
 # add Loading component
-python react-pyscripts/component/main.py Loading
+python react-pyscripts/src/component/main.py Loading

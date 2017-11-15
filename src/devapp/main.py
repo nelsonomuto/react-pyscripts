@@ -23,7 +23,7 @@ print(f"""
 """)
 
 def get_template_list():
-    template_list = [
+    return [
         ('{port}', port)
     ]
 
