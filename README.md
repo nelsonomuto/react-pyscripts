@@ -10,11 +10,13 @@ The philosophy behind this is that components should allow for easy development 
 
 ## devapp
 
-The devapp concept is centered around the creation of an ephemeral app. Each invocation of the devapp creates a new instance of it and does not need to be persisted in source control.
+The _devapp_ concept is centered around the creation of an ephemeral app. Each invocation of the devapp creates a new instance of it and does not need to be persisted in source control.
 
 In the [devapp](devapp) directory we have the scripts that create the development application wherein the components can be developed in isolation from the rest of the app. See the [example script for usage details](examples/devapp.sh).
 
-We then use a symlink back to the base/original/target app that allows for the files to be modified.
+We then use a symlink back to the _base app_ (the app which you are developing) that allows for the files to be modified.
+
+The devapp listens on port _3006_ by default but this is configurable. It will contain a corresponding view for each component in the targeted component directories of the base app. So you can use the url to toggle between components in the browser. For example if your app contains a _component/Loading_ and _container/Notification_ component, you will be able to view each separately by visiting _http://localhost:3006/component/Loading_ and _http://localhost:3006/container/Notification_ respectively.
 
 ### devapp webpack
 
