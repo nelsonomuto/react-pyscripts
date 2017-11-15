@@ -7,6 +7,7 @@ component_dir = path.abspath(sys.argv[2])
 component_name = str.split(component_dir, '/')[-1]
 file_parent = path.dirname(os.path.realpath(__file__))
 template_dir = path.join(file_parent, 'template')
+dev_app_component_dir = path.join(dev_app_dir, 'src', component_name)
 
 print(f"""
     dev_app_dir {dev_app_dir}
@@ -23,6 +24,6 @@ def init_template(app_dir):
 
 def init():
     init_template(dev_app_dir)
-    copy_tree(component_dir, path.join(dev_app_dir, component_name))
+    os.symlink(component_dir, dev_app_component_dir)
 
 init()    
