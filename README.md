@@ -10,7 +10,11 @@ The philosophy behind this is that components should allow for easy development 
 
 ## devapp
 
-The devapp is a useful script that creates the development application wherein the components can be developed in isolation from the rest of the app. See the [example script for usage details](examples/devapp.sh).
+The devapp concept is centered around the creation of an ephemeral app. Each invocation of the devapp creates a new instance of it and does not need to be persisted in source control.
+
+In the [devapp](devapp) directory we have the scripts that create the development application wherein the components can be developed in isolation from the rest of the app. See the [example script for usage details](examples/devapp.sh).
+
+We then use a symlink back to the base/original/target app that allows for the files to be modified.
 
 ### devapp webpack
 
